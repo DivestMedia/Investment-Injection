@@ -1,0 +1,89 @@
+#section-account{
+	.profile_photo{
+		display: none !important;
+	}
+	.container-pp-update{
+		position:relative;
+		cursor: pointer;
+		&:hover{
+			.change_profile_image{
+				display: block;
+			    background: rgba(0, 0, 0, .5);
+
+			}
+		}
+		.change_profile_image{
+			display: none;
+			position: absolute;
+		    width: 97%;
+		    height: 100%;
+		    margin: 0 auto;
+		    left: 0;
+		    right: 0;
+			span{
+				color: #ddd;
+				font-size: 50px;
+		    	top: 40%;
+			}
+		}
+
+	}
+	#account.tab-pane{
+		.container-changepassword{
+			display: none;
+		}
+		>form{
+			>fieldset{
+				border-bottom: 1px solid #ddd;
+				margin-bottom: 20px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	#profile.tab-pane{
+		>form{
+			>fieldset{
+				border-bottom: 1px solid #ddd;
+				margin-bottom: 20px;
+				padding-bottom: 10px;
+			}
+		}
+		
+		.container-website{
+			input{
+				width: 80%;
+				display: inline-block;
+				vertical-align: top;
+			}
+			button{
+				width: 18%;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		.select2-container{
+			width: 100% !important;
+		}
+		.added_websites{
+			padding: 5px;
+			>span.label{
+				display: inline-block;
+				margin: 5px;
+			    font-size: 13px;
+			    max-width: 100%;
+		        word-wrap: break-word;
+			    white-space: normal;
+			    text-align: left;
+			    span{
+		    	    margin-left: 10px;
+		    	    cursor: pointer;
+			    }
+			}
+		}
+	}
+}
+.ui-menu{
+	.ui-menu-item{
+		padding: 5px !important;
+	}
+}
